@@ -9,13 +9,13 @@ int input_side()
 int check_scalene(int a,int b,int c)
 {
   if(a!=b && a!=c && c!=b)
-  {
-    return 1;
-  }
-    else
    {
+    return 1;
+   }
+    else
+  {
     return 0;
-  }
+   }
 }
 void output(int a,int b,int c,int isscalene)
 {
