@@ -1,1 +1,8 @@
+gcc -g p1original.c
+ ./a.out
+enter the values for base and height
+2
+4
+area of triangle 1/2*2.000000*4.000000 is 4.000000
+ 
 
