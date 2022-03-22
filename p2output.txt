@@ -1,1 +1,19 @@
 
+ gcc -g p2original.c
+ ./a.out
+enter the no
+4
+enter the no
+3 
+enter the no
+4
+it is not scalene triangle
+ ./a.out
+enter the no
+3
+enter the no
+45
+enter the no
+4
+it is a scalene triangle
+  

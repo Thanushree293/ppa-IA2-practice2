@@ -1,1 +1,10 @@
+ gcc -g p3original.c
+ ./a.out
+enter the number
+4
+4 is a composite number ./a.out
+enter the number
+3
+3 is not composite number 
+
 
