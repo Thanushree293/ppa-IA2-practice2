@@ -1,31 +1,32 @@
-#include<stdio.h>
+ #include<stdio.h>
 #include<math.h>
 struct _triangle
 {
-  float b,h,area;
+  float base,height,area;
 };
 typedef struct _triangle triangle; 
-triangle input_triangle(triangle *b,triangle *h)
+triangle input_triangle()
 {
-  
-  printf("enter the value of base and height\n");
-  scanf("%f %f", b,h);
+  triangle x;
+  printf("enter the value of x\n");
+  scanf("%f%f",&x.base,&x.height);
+  return x;
 }
-triangle find_area(triangle b,triangle h,triangle *area)
-{  
-  *area=(b*h)/2;
-  return *area;
+void find_area(triangle *t)
+{  //here t is pointer to structure variable//
+  t->area=0.5 * t->base * t->height;
 }
-void output(triangle a,triangle b,triangle area)
+void output(triangle t)
 {
-  printf("the area of a triangle is %f",area);
-
+  printf("the area of a triangle wiht base %f and height %f is %f\n",t.base,t.height,t.area);
 }
 int main()
 {
-  triangle a,b,c;
-  input_triangle(&a,&b);
-  c =find_area(a,b,&c);
-  output(a,b,c);
+triangle t;
+ t=input_triangle();
+ find_area(&t);
+ output(t);
   return 0;
 }
+//triangle*t is a structure variable//
+  //int calling fun no need to write return type specifier//

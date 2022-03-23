@@ -1,1 +1,6 @@
-
+cc -g p7original.c -lm
+ ./a.out
+enter the value of x
+5
+3 
+the area of a triangle wiht base 5.000000 and height 3.000000 is 7.500000
